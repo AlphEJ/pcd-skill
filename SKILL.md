@@ -1,6 +1,6 @@
 ---
 name: pcd
-description: 用「个人认知文档」（PCD，Personal-Cognition-Document，旧称 PPD 个人原则文档）双版本范式，把视频/文章/对话/口述等素材整理成「结构版 + 叙事版」两份认知文档：结构版（YAML 元信息 + 10 模块）供 AI 解析、检索与网络关联，叙事版（8 要素 + 核心记忆卡）供人阅读与记忆。写前必做命题检验四问（逻辑自洽/反例/隐含假设/定性结论）；写后走 status 检验闭环。当用户提到 PCD、PPD、个人认知文档、个人原则文档，或要求"把这条视频/文章做成 PCD""拆书/拆视频""沉淀这条感悟""生成双版本""升级已有 PCD"时使用。产出为 Obsidian 兼容的 Markdown 双文件。
+description: 用「个人认知文档」（PCD，Personal-Cognition-Document，旧称 PPD 个人原则文档）双版本范式，把视频/文章/对话/口述等素材整理成「结构版 + 叙事版」两份认知文档：结构版（YAML 元信息 + 11 模块）供 AI 解析、检索与网络关联，叙事版（8 要素 + 核心记忆卡）供人阅读与记忆。写前必做命题检验四问（逻辑自洽/反例/隐含假设/定性结论）；写后走 status 检验闭环。当用户提到 PCD、PPD、个人认知文档、个人原则文档，或要求"把这条视频/文章做成 PCD""拆书/拆视频""沉淀这条感悟""生成双版本""升级已有 PCD"时使用。产出为 Obsidian 兼容的 Markdown 双文件。
 ---
 
 # PCD（个人认知文档）· 双版本
@@ -47,7 +47,7 @@ description: 用「个人认知文档」（PCD，Personal-Cognition-Document，�
 
 ### ③ 生成结构版
 
-- 读 `assets/pcd-template.md` 作底稿，填充全部 10 模块（思考缘起【背景】、核心概念释义、核心判断（主原则）、边界与反例、推导依据、行动指引、待持续观察/迭代点、版本变更日志、关联思考补充）。
+- 读 `assets/pcd-template.md` 作底稿，填充全部 11 模块（YAML 元信息 + 10 个正文章节：思考缘起【背景】、核心概念释义、核心判断（主原则）、边界与反例、推导依据、行动指引、衍生附属金句、待持续观察/迭代点、版本变更日志、关联思考补充）。
 - YAML 必填字段：`document_type: PCD`、`title`、`type`（认知域：成长/学习/情绪/职业规划/决策；tags 作副域）、`core_quote`、`version`、`status`（假设/已验证/已更新/已废止）、`created`/`updated`、`tags`、`source`（素材来源）、`source_summary`、`related_principles`。
 - 连接规则：同域必连；跨域有连接点可连；无连接点不连（宁缺毋滥）。连接点五类：概念共用/机制互释/场景重叠/结论互用/约束互补；挂链接必须写明连接点。`related_principles` 填 `[[文档名]]`。
 - 文件名：`主题名-PCD-结构版.md`。
@@ -71,6 +71,6 @@ description: 用「个人认知文档」（PCD，Personal-Cognition-Document，�
 
 ## 资源
 
-- `assets/pcd-template.md` — 结构版空白模板（YAML 含 type/source/source_summary 与 9 个正文章节 + 填写指引），用户要模板时直接给出；起草时作底稿。
+- `assets/pcd-template.md` — 结构版空白模板（YAML 含 type/source/source_summary 与 10 个正文章节 + 填写指引），用户要模板时直接给出；起草时作底稿。
 - `references/narrative-guide.md` — 叙事版生成规范（8 要素、标题体系、核心记忆卡设计、验收标准），生成叙事版前必读。
 - `references/pcd-concept.md` — 双版本完整概念说明（定义、更名说明、双版本设计哲学、与 PRD 关系、认知状态 status、连接规则、命题检验、版本规则、使用流程、关键提醒），用户问"PCD 是什么/为什么有用"时读取后解释。
